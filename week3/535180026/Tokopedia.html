@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokopedia Store</title>
+
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+  <!-- JS Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Table -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+  <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+      <i data-feather="shopping-bag"></i>
+      Tokopedia
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            Home <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+              <i data-feather="book-open"></i>
+              Books
+            </a>
+            <a class="dropdown-item" href="#">
+              <i data-feather="archive"></i>
+              Fashion
+            </a>
+            <a class="dropdown-item" href="#">
+              <i data-feather="monitor"></i>
+              Electronics
+            </a>
+            <a class="dropdown-item" href="#">
+              <i data-feather="tool"></i>
+              Tools &amp; Equipment
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <i data-feather="package"></i>
+              View All Categories
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Login <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+      
+      <a class="cart"><i data-feather="shopping-cart"></i></a>
+      
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <i data-feather="search"></i>
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container" id="cont1">
+    <hr>
+    <div class="row mb-4">
+      <div class="col-sm mx-3 px-5 py-3 border rounded">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="my-2 text-primary">Fashion</h5>
+            <h4 class="text-success">99+ Posts</h4>
+          </div>
+          <div class="col-sm text-right">
+            <i data-feather="archive"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mx-3 px-5 py-3 border rounded">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="my-2 text-primary">Electronics</h5>
+            <h4 class="text-success">99+ Posts</h4>
+          </div>
+          <div class="col-sm text-right">
+            <i data-feather="monitor"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mx-3 px-5 py-3 border rounded">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="my-2 text-primary">Books</h5>
+            <h4 class="text-success">99+ Posts</h4>
+          </div>
+          <div class="col-sm text-right">
+            <i data-feather="book-open"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <hr>
+      <div class="card" id="c1">
+        <div class="card-header">
+          Mostly Search
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Let's See..</h5>
+          <p class="card-text">The chosen mostly search products</p>
+          <a href="#" class="btn btn-success">Open</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="mycard">
+      <hr>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="" alt="This is image">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the description as the product should have.</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="" alt="This is image">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the description as the product should have.</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="" alt="This is image">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the description as the product should have.</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#">535180026</a>
+      </div>
+    </footer>
+  <!-- Feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

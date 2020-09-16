@@ -1,0 +1,68 @@
+body {
+    background-color: #FFF;
+  }
+
+  .navbar {
+    background: rgba(76, 175, 80, 0.9)!important;
+  }
+
+  .navbar-brand {
+    color: #FFF;
+  }
+
+  .navbar-brand .feather {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+
+  .btn-outline-success {
+    color: #FFF;
+    border-color: #FFF;
+  }
+
+  .btn-outline-success:hover {
+    background-color: #FFFAF0;
+    color: #008000;
+  }
+
+  .btn-outline-success .feather {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+  }
+
+  .cart {
+    margin-right: 20px;
+    color: snow;
+    cursor: pointer;
+  }
+
+  .cart:hover {
+    color:blue;
+  }
+
+  #cont1 {
+    margin-top: 5em;
+  }
+
+  .col-sm {
+    cursor: pointer;
+  }
+  
+  .col-sm .text-right .feather {
+    width: 50px;
+    height: 50px;
+    margin-top: 7px;
+  }
+
+  .card-header {
+    color: seagreen;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .page-footer {
+    background-color: rgba(76, 175, 80, 0.2);
+  }

@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* class selector */
+.news {
+    color: #99ccff;
+}
+
+.ads {
+    color: brown;
+}
+
+.breaking {
+    color: chartreuse;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+/* id selector */
+#footer {
+    color: darkgoldenrod;
+    border: 1px solid #000;
+}
+
+div > p {
+    color: #FFF;
+    background-color: #000;
+}
